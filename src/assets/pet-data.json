@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Pickle",
+        "breed": "Labrador",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Remmy",
+        "breed": "Retriever",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Bernie",
+        "breed": "Pyranese",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Peter",
+        "breed": "Bulldog",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Penny",
+        "breed": "Labrador",
+        "sex": "female",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Meghan",
+        "breed": "Retriever",
+        "sex": "female",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Doug",
+        "breed": "Retriever",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Scooby",
+        "breed": "Pyranese",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Randy",
+        "breed": "Retriever",
+        "sex": "female",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Rudy",
+        "breed": "Labrador",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Ferdinand",
+        "breed": "Bulldog",
+        "sex": "male",
+        "image": "public/lab.png"
+    },
+    {
+        "name": "Barry",
+        "breed": "Pyranese",
+        "sex": "male",
+        "image": "public/lab.png"
+    }
+]
