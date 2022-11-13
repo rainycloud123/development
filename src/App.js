@@ -2,8 +2,9 @@
 import dogData from "./assets/pet-data.json";
 import './App.css';
 import { useState } from "react";
-import Dog from "./components/dog"
-import FilteredList from "./components/FilteredList"
+import Dog from "./components/dog";
+import Buttons from "./components/buttons";
+ 
 
 dogData.forEach((item) => {
   item.image = process.env.PUBLIC_URL + "/" + item.image;
@@ -12,6 +13,8 @@ dogData.forEach((item) => {
 
 function App() {
   const [dogs, setDogs] = useState([])
+  //const [item, setItem] = useState(dogData);
+  const rescuePups = [...new Set(dogData.map((Val) => Val.breed))];
 
   function addToCart(item) {
     setDogs([...dogs, item])
@@ -22,6 +25,21 @@ function App() {
     <div className="App">
 
       <h1>Rescue Puppies</h1>
+
+    
+    const filterItem = (curdog) => {
+        const newItem = dogData.filter((newVal) => {
+            return newVal.breed === curdog; 
+        	// comparing category for displaying data
+    });
+    setDogs(newItem);
+  };
+
+      <p>
+        {dogData.map((item, index) => (
+          <Buttons item={item} addToCart={addToCart} />
+        ))}
+      </p>
       <p>
         {dogData.map((item, index) => (
           <Dog item={item} addToCart={addToCart} />
@@ -33,11 +51,6 @@ function App() {
         {dogs.map((item, index) => (
           <div>
             <p>{item.name}</p>
-            
-            <p>{item.breed}</p>
-            
-
-
           </div>
 
         ))}
