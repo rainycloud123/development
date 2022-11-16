@@ -62,6 +62,11 @@ function App() {
     setDogs([...dogs, item])
   }
 
+  const sortedArray = dogData.sort((a, b) => {
+    return a.time - b.time;
+    })
+    
+
   const Dropdown = ({ open, trigger, menu }) => {
     return (
       <div className="dropdown">
@@ -123,7 +128,7 @@ function App() {
           <button onClick={handleMenumale}>male</button>
         ]}
       />
-      {/* <button onClick={() => filterItem("Labrador")} > Filter by Labrador</button> */}
+      <button onClick={() => sortedArray} > Longest Stay First</button>
       {/* <p>
         {dogData.map((item, index) => (
           <Buttons item={item} addToCart={addToCart} />
@@ -136,8 +141,8 @@ function App() {
       </p>
 
 
-      
-        {/* <h2>Favorites</h2>
+
+      {/* <h2>Favorites</h2>
         {dogs.map((item, index) => (
           <div>
             <p>{item.name}</p>
@@ -145,7 +150,7 @@ function App() {
 
         ))}
         TODO: render a list of items in the cart */}
-      
+
 
     </div >
   );
