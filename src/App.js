@@ -14,10 +14,8 @@ dogData.forEach((item) => {
 
 
 function App() {
-  const [dogs, setDogs] = useState([])
-  useEffect(() => {
-    setDogs(dogData)
-  }, [])
+  const [dogs, setDogs] = useState(dogData)
+  const [isSorted, setIsSorted] = useState(false)
   //const [item, setItem] = useState(dogData);
   const rescuePups = [...new Set(dogData.map((Val) => Val.breed))];
 
@@ -62,10 +60,17 @@ function App() {
     setDogs([...dogs, item])
   }
 
-  const sortedArray = dogData.sort((a, b) => {
-    return a.time - b.time;
-    })
-    
+  useEffect(() => {
+    if (isSorted) {
+      const sortedDogs = [...dogs]
+      sortedDogs.sort((a, b) => {
+        return a.time - b.time;
+      })
+      setDogs(sortedDogs)
+    } else {
+      setDogs(dogData)
+    }
+  }, [isSorted, dogs])
 
   const Dropdown = ({ open, trigger, menu }) => {
     return (
@@ -128,7 +133,7 @@ function App() {
           <button onClick={handleMenumale}>male</button>
         ]}
       />
-      <button onClick={() => sortedArray} > Longest Stay First</button>
+      <button onClick={() => setIsSorted(!isSorted)} > Longest Stay First</button>
       {/* <p>
         {dogData.map((item, index) => (
           <Buttons item={item} addToCart={addToCart} />
