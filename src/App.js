@@ -3,7 +3,7 @@ import dogData from "./assets/pet-data.json";
 import './App.css';
 import { useState, useEffect } from "react";
 import Dog from "./components/dog";
-import Buttons from "./components/buttons";
+//import Buttons from "./components/buttons";
 import * as React from 'react';
 
 
@@ -15,11 +15,20 @@ dogData.forEach((item) => {
 
 function App() {
   const [dogs, setDogs] = useState(dogData)
+  const [cartItems, setCart] = useState([])
   const [isSorted, setIsSorted] = useState(false)
   //const [item, setItem] = useState(dogData);
   const rescuePups = [...new Set(dogData.map((Val) => Val.breed))];
 
   const [open, setOpen] = React.useState(false);
+
+  function calcTotal() {
+    let total = 0
+    for (let i = 0; i < cartItems.length; i++) {
+      total += cartItems[i].price
+    }
+    return total;
+  }
 
   const handleOpen = () => {
     setOpen(!open);
@@ -57,10 +66,10 @@ function App() {
   };
 
   function addToCart(item) {
-    setDogs([...dogs, item])
+    setCart([...cartItems, item])
   }
 
-  useEffect(() => {
+  const sortFunc = () => {
     if (isSorted) {
       const sortedDogs = [...dogs]
       sortedDogs.sort((a, b) => {
@@ -70,7 +79,7 @@ function App() {
     } else {
       setDogs(dogData)
     }
-  }, [isSorted, dogs])
+  }
 
   const Dropdown = ({ open, trigger, menu }) => {
     return (
@@ -133,31 +142,43 @@ function App() {
           <button onClick={handleMenumale}>male</button>
         ]}
       />
-      <button onClick={() => setIsSorted(!isSorted)} > Longest Stay First</button>
+      <button onClick={() => {
+        setIsSorted(!isSorted)
+        sortFunc()
+      }} > Longest Stay First</button>
       {/* <p>
         {dogData.map((item, index) => (
           <Buttons item={item} addToCart={addToCart} />
         ))}
       </p> */}
-      <p>
+
+      <div className="dogs">
         {dogs.map((item, index) => (
           <Dog item={item} addToCart={addToCart} />
         ))}
-      </p>
+      </div>
 
 
 
-      {/* <h2>Favorites</h2>
-        {dogs.map((item, index) => (
+      <div>
+        <h2>Watch List</h2>
+        {cartItems.map((item, index) => (
           <div>
             <p>{item.name}</p>
+            {/* Total: 
+            {Object.entries()} */}
+            <p>{item.price}</p>
+
+
+
           </div>
 
+
         ))}
-        TODO: render a list of items in the cart */}
-
-
-    </div >
+        <h2>total: {calcTotal()}</h2>
+        {/* TODO: render a list of items in the cart */}
+      </div>
+    </div>
   );
 }
 

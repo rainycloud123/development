@@ -1,0 +1,5 @@
+.dogCard{
+    display: flex;
+    flex-direction: column;
+
+}

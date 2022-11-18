@@ -64,7 +64,19 @@ img {
   cursor: pointer;
 }
 
+.dogs{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
 /* questions: 
+
+- sort and filter both working at the same time
+- aggregator button issue
+- total not everywhere
+- style
+
 - sort only on click
 - sort and filter together
 - how to get each image a different size

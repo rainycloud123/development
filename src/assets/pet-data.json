@@ -4,6 +4,7 @@
         "breed": "Labrador",
         "sex": "male",
         "time": "1",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -11,6 +12,7 @@
         "breed": "Retriever",
         "sex": "male",
         "time": "4",
+        "price": 100,
         "image": "lab.png" 
     },
     {
@@ -18,6 +20,7 @@
         "breed": "Pyranese",
         "sex": "male",
         "time": "3",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -25,6 +28,7 @@
         "breed": "Bulldog",
         "sex": "male",
         "time": "6",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -32,6 +36,7 @@
         "breed": "Labrador",
         "sex": "female",
         "time": "2",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -39,6 +44,7 @@
         "breed": "Retriever",
         "sex": "female",
         "time": "9",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -46,6 +52,7 @@
         "breed": "Retriever",
         "sex": "male",
         "time": "2",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -53,6 +60,7 @@
         "breed": "Pyranese",
         "sex": "male",
         "time": "3",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -60,6 +68,7 @@
         "breed": "Retriever",
         "sex": "female",
         "time": "7",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -67,6 +76,7 @@
         "breed": "Labrador",
         "sex": "male",
         "time": "2",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -74,6 +84,7 @@
         "breed": "Bulldog",
         "sex": "male",
         "time": "6",
+        "price": 100,
         "image": "lab.png"
     },
     {
@@ -81,6 +92,7 @@
         "breed": "Pyranese",
         "sex": "male",
         "time": "4",
+        "price": 100,
         "image": "lab.png"
     }
 ]
