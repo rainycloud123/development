@@ -10,6 +10,7 @@ function Dog(props) {
             <p> Price: {props.item.price} </p>
             <img src={props.item.image} />
             <button onClick={() => { props.addToCart(props.item) }}>Save for Later</button>
+            <button onClick={() => { props.removeFromCart(props.item) }}>Unsave</button>
         </div>
     );
 }

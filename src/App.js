@@ -34,6 +34,10 @@ function App() {
     setOpen(!open);
   };
 
+  // const handleMenu = (field) => {
+  //   filterItem(field);
+  //   setOpen(false);
+  // }
   const handleMenuOne = () => {
     filterItem("Labrador");
     setOpen(false);
@@ -67,6 +71,10 @@ function App() {
 
   function addToCart(item) {
     setCart([...cartItems, item])
+  }
+
+  function removeFromCart(item){
+    setCart(cartItems => cartItems.filter((i, _) => i !== item));
   }
 
   const sortFunc = () => {
@@ -157,6 +165,12 @@ function App() {
           <Dog item={item} addToCart={addToCart} />
         ))}
       </div>
+      <div>
+        {cartItems.map((item, index) => (
+          <Dog item={item} removeFromCart={removeFromCart} />
+        ))}
+      </div>
+
 
 
 
@@ -168,9 +182,6 @@ function App() {
             {/* Total: 
             {Object.entries()} */}
             <p>{item.price}</p>
-
-
-
           </div>
 
 
