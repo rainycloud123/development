@@ -78,7 +78,7 @@ function App() {
   }
 
   const sortFunc = () => {
-    if (isSorted) {
+    if (!isSorted) {
       const sortedDogs = [...dogs]
       sortedDogs.sort((a, b) => {
         return a.time - b.time;
@@ -139,7 +139,7 @@ function App() {
       <h1>Rescue Puppies</h1>
       <Dropdown
         open={open}
-        trigger={<button onClick={handleOpen}>Dropdown</button>}
+        trigger={<button class="button2" onClick={handleOpen}>Dropdown</button>}
         menu={[
           <button onClick={handleMenuThree}>all</button>,
           <button onClick={handleMenuOne}>Labradors</button>,
@@ -150,15 +150,10 @@ function App() {
           <button onClick={handleMenumale}>male</button>
         ]}
       />
-      <button onClick={() => {
+      <button class="button2" onClick={() => {
         setIsSorted(!isSorted)
         sortFunc()
-      }} > Longest Stay First</button>
-      {/* <p>
-        {dogData.map((item, index) => (
-          <Buttons item={item} addToCart={addToCart} />
-        ))}
-      </p> */}
+      }} > Sort By Age</button>
 
       <div className="dogs">
         {dogs.map((item, index) => (
@@ -171,24 +166,16 @@ function App() {
         ))}
       </div>
 
-
-
-
-
       <div>
-        <h2>Watch List</h2>
+        <h2>Saved For Later</h2>
         {cartItems.map((item, index) => (
           <div>
             <p>{item.name}</p>
-            {/* Total: 
-            {Object.entries()} */}
             <p>{item.price}</p>
           </div>
 
-
         ))}
-        <h2>total: {calcTotal()}</h2>
-        {/* TODO: render a list of items in the cart */}
+        <h2>Total: {calcTotal()}</h2>
       </div>
     </div>
   );

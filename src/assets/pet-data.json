@@ -3,7 +3,7 @@
         "name": "Pickle",
         "breed": "Labrador",
         "sex": "male",
-        "time": "1",
+        "time": "8",
         "price": 100,
         "image": "pickle.jpg"
     },
@@ -11,7 +11,7 @@
         "name": "Remmy",
         "breed": "Retriever",
         "sex": "male",
-        "time": "4",
+        "time": "9",
         "price": 100,
         "image": "goldenret.jpg" 
     },
@@ -19,7 +19,7 @@
         "name": "Bernie",
         "breed": "Pyranese",
         "sex": "male",
-        "time": "3",
+        "time": "12",
         "price": 100,
         "image": "notbernie.jpg"
     },
@@ -35,7 +35,7 @@
         "name": "Penny",
         "breed": "Labrador",
         "sex": "female",
-        "time": "2",
+        "time": "10",
         "price": 100,
         "image": "lab.png"
     },
@@ -51,7 +51,7 @@
         "name": "Doug",
         "breed": "Retriever",
         "sex": "male",
-        "time": "2",
+        "time": "8",
         "price": 100,
         "image": "doug.jpg"
     },
@@ -59,7 +59,7 @@
         "name": "Scooby",
         "breed": "Pyranese",
         "sex": "male",
-        "time": "3",
+        "time": "8",
         "price": 100,
         "image": "pyranese.jpg"
     },
@@ -75,7 +75,7 @@
         "name": "Rudy",
         "breed": "Labrador",
         "sex": "male",
-        "time": "2",
+        "time": "7",
         "price": 100,
         "image": "blacklab1.jpg"
     },
@@ -83,7 +83,7 @@
         "name": "Ferdinand",
         "breed": "Bulldog",
         "sex": "male",
-        "time": "6",
+        "time": "5",
         "price": 100,
         "image": "bull.jpg"
     },
@@ -91,7 +91,7 @@
         "name": "Barry",
         "breed": "Pyranese",
         "sex": "male",
-        "time": "4",
+        "time": "6",
         "price": 100,
         "image": "pyranese1.jpg"
     }

@@ -37,18 +37,18 @@ img {
   margin: 5px 0;
   padding: 0;
 
-  border: 1px solid grey;
+  border: 1px solid rgb(187, 191, 245);
   width: 150px;
 }
 
 .menu > li {
   margin: 0;
 
-  background-color: white;
+  background-color: rgb(191, 236, 252);
 }
 
 .menu > li:hover {
-  background-color: lightgray;
+  background-color: rgb(211, 211, 211);
 }
 
 .menu > li > button {
@@ -72,24 +72,33 @@ img {
   padding: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  
 }
 
+.button{
+  background-color:rgb(140, 189, 182);
+  border-radius:  10px;  
+  padding: 5px;
+}
+.button:hover{
+  background-color: rgb(186, 173, 196);
+  transition: .3s;
+}
+
+.button2{
+  background-color:rgb(140, 189, 182);
+  padding: 5px;
+  max-width: 150px;
+  min-width: 150px;
+}
+.button2:hover{
+  background-color: rgb(186, 173, 196);
+}
+
+
 /* questions: 
-
-- sort and filter both working at the same time
-- aggregator button issue
-- total not everywhere
-- style
-
-- sort only on click
-- sort and filter together
-- how to get each image a different size
--   general style moving things around
-- how to manage favorites
-
-todo"
-- change images later
+-buttons in favorites (only want remove button) , only want add button in main 
+menu
+- style: center dropdown, center images, font
 
 */
 
