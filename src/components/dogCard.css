@@ -1,5 +1,7 @@
 .dogCard{
+    justify-content: flex;
     display: flex;
     flex-direction: column;
-
+    flex: center;
+    padding: 30px;
 }

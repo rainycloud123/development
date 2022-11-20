@@ -174,6 +174,7 @@ function App() {
 
 
 
+
       <div>
         <h2>Watch List</h2>
         {cartItems.map((item, index) => (

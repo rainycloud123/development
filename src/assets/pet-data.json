@@ -5,7 +5,7 @@
         "sex": "male",
         "time": "1",
         "price": 100,
-        "image": "lab.png"
+        "image": "pickle.jpg"
     },
     {
         "name": "Remmy",
@@ -13,7 +13,7 @@
         "sex": "male",
         "time": "4",
         "price": 100,
-        "image": "lab.png" 
+        "image": "goldenret.jpg" 
     },
     {
         "name": "Bernie",
@@ -21,7 +21,7 @@
         "sex": "male",
         "time": "3",
         "price": 100,
-        "image": "lab.png"
+        "image": "notbernie.jpg"
     },
     {
         "name": "Peter",
@@ -29,7 +29,7 @@
         "sex": "male",
         "time": "6",
         "price": 100,
-        "image": "lab.png"
+        "image": "bulldog.jpg"
     },
     {
         "name": "Penny",
@@ -45,7 +45,7 @@
         "sex": "female",
         "time": "9",
         "price": 100,
-        "image": "lab.png"
+        "image": "goldenret2.jpg"
     },
     {
         "name": "Doug",
@@ -53,7 +53,7 @@
         "sex": "male",
         "time": "2",
         "price": 100,
-        "image": "lab.png"
+        "image": "doug.jpg"
     },
     {
         "name": "Scooby",
@@ -61,7 +61,7 @@
         "sex": "male",
         "time": "3",
         "price": 100,
-        "image": "lab.png"
+        "image": "pyranese.jpg"
     },
     {
         "name": "Randy",
@@ -69,7 +69,7 @@
         "sex": "female",
         "time": "7",
         "price": 100,
-        "image": "lab.png"
+        "image": "yawn.jpg"
     },
     {
         "name": "Rudy",
@@ -77,7 +77,7 @@
         "sex": "male",
         "time": "2",
         "price": 100,
-        "image": "lab.png"
+        "image": "blacklab1.jpg"
     },
     {
         "name": "Ferdinand",
@@ -85,7 +85,7 @@
         "sex": "male",
         "time": "6",
         "price": 100,
-        "image": "lab.png"
+        "image": "bull.jpg"
     },
     {
         "name": "Barry",
@@ -93,6 +93,6 @@
         "sex": "male",
         "time": "4",
         "price": 100,
-        "image": "lab.png"
+        "image": "pyranese1.jpg"
     }
 ]
