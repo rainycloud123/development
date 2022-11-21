@@ -1,6 +1,6 @@
 import "./dogCard.css"
 
-function Dog(props) {
+function Dog_copy(props) {
     return (
         <div className="dogCard">
             <h3>Name: {props.item.name}</h3>
@@ -9,11 +9,11 @@ function Dog(props) {
             <p> Age (Weeks): {props.item.time} </p>
             <p> Price: {props.item.price} </p>
             <img src={props.item.image} />
-            {!props.cartItems.includes(props.item) ? <button className="button" onClick={() => { props.addToCart(props.item) }}>Save for Later</button> : <button className="button" onClick={() => { props.removeFromCart(props.item) }}>Unsave</button>}
+            <button className="button" onClick={() => { props.removeFromCart(props.item) }}>Unsave</button>
 
 
         </div>
     );
 }
 
-export default Dog;
+export default Dog_copy;

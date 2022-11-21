@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+https://rainycloud123.github.io/development/
 
 ### Goal and Value of the Application
 - goal is to create an easy to use web application to browse rescue puppies 

@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Dog from "./components/dog";
 //import Buttons from "./components/buttons";
 import * as React from 'react';
+import Dog_copy from "./components/Dog_copy";
 
 
 
@@ -73,7 +74,7 @@ function App() {
     setCart([...cartItems, item])
   }
 
-  function removeFromCart(item){
+  function removeFromCart(item) {
     setCart(cartItems => cartItems.filter((i, _) => i !== item));
   }
 
@@ -157,12 +158,12 @@ function App() {
 
       <div className="dogs">
         {dogs.map((item, index) => (
-          <Dog item={item} addToCart={addToCart} />
+          <Dog item={item} addToCart={addToCart} removeFromCart={removeFromCart} cartItems={cartItems} />
         ))}
       </div>
       <div>
         {cartItems.map((item, index) => (
-          <Dog item={item} removeFromCart={removeFromCart} />
+          <Dog_copy item={item} removeFromCart={removeFromCart} />
         ))}
       </div>
 
