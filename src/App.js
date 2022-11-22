@@ -140,15 +140,15 @@ function App() {
       <h1>Rescue Puppies</h1>
       <Dropdown
         open={open}
-        trigger={<button class="button2" onClick={handleOpen}>Dropdown</button>}
+        trigger={<button class="button2" onClick={handleOpen}>Menu</button>}
         menu={[
-          <button onClick={handleMenuThree}>all</button>,
+          <button onClick={handleMenuThree}>All</button>,
           <button onClick={handleMenuOne}>Labradors</button>,
           <button onClick={handleMenuTwo}>Retrievers</button>,
           <button onClick={handleMenuFour}>Pyranese</button>,
           <button onClick={handleMenuFive}>Bulldog</button>,
-          <button onClick={handleMenufemale}>female</button>,
-          <button onClick={handleMenumale}>male</button>
+          <button onClick={handleMenufemale}>Female</button>,
+          <button onClick={handleMenumale}>Male</button>
         ]}
       />
       <button class="button2" onClick={() => {

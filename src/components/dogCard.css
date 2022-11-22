@@ -5,3 +5,7 @@
     flex: center;
     padding: 30px;
 }
+
+.button{
+    max-width: 300px;
+}
